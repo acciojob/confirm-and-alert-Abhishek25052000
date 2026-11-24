@@ -1,25 +1,22 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm And Alert</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>Do you want to proceed</h1>
-	<button onclick="add()">ok</button>
-    <script>
-		function add(){
-			if(true){
-			alert("You clicked OK. Proceeding;");
-			}else{
-				alert("You clicked Cancel. Exiting...");
-			}
-		}
+
+<script>
+    let result = confirm("Do you want to proceed?");
+
+    if (result === true) {
+        alert("You clicked OK. Proceeding...");
+    } else {
+        alert("You clicked Cancel. Exiting...");
+    }
 </script>
 
 </body>
-
 </html>
